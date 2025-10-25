@@ -1,6 +1,6 @@
 module github.com/AshokShau/TgMusicBot
 
-+ go 1.22
++ go 1.21
 
 require (
 	github.com/Laky-64/gologging v1.1.0

@@ -1,0 +1,62 @@
+{
+  "name": "Prenses Music",
+  "description": "Advanced Telegram Music Bot with Assistant support | Pyrogram v2 | Heroku Deploy Ready",
+  "repository": "https://github.com/WCGKING/BrandrdXMusic",
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Get it from https://my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get it from https://my.telegram.org/apps",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "BotFather token",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Bot owner Telegram ID (multiple allowed, comma-separated)",
+      "required": true
+    },
+    "LOG_GROUP_ID": {
+      "description": "Private log group ID (must start with -100)",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Pyrogram session string for Assistant account",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB connection string (optional)",
+      "required": false,
+      "value": ""
+    },
+    "SUPPORT_GROUP": {
+      "description": "Support group link (optional)",
+      "required": false,
+      "value": ""
+    },
+    "SUPPORT_CHANNEL": {
+      "description": "Support channel link (optional)",
+      "required": false,
+      "value": ""
+    },
+    "START_MODULE": {
+      "description": "Python main module to run, e.g. BrandrdXMusic",
+      "required": false,
+      "value": ""
+    },
+    "PYROGRAM_UPDATE_WORKAROUND": {
+      "description": "Bypass unknown constructor Telegram update error",
+      "required": false,
+      "value": "1"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
